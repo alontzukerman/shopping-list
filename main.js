@@ -2,26 +2,8 @@ const express = require('express'); // import express library
 const app = express();
 app.use(express.json());
 
-let products = [ // static array
-    {
-        id: '1',
-        name: 'tv',
-        company: 'samsung',
-        size: '50'
-    },
-    {
-        id: '2',
-        name: 'tv',
-        company: 'lg',
-        size: '65'
-    },
-    {
-        id: '3',
-        name: 'tv',
-        company: 'panasonic',
-        size: '39'
-    }
-];
+let products = []; // static array ==> {id: , name: , amount: , price: }
+
 app.get('/products/', (req,res)=>{ // send list of products
     res.send(products);
 });
