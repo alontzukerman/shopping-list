@@ -2,7 +2,7 @@ const express = require('express'); // import express library
 const app = express();
 app.use(express.json());
 
-let products = [
+let products = [ // static array
     {
         id: '1',
         name: 'tv',
