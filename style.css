@@ -1,0 +1,99 @@
+fieldset {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+
+}
+
+.button {
+    background: transparent;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+}
+
+.list {
+    width: 450px;
+    border-radius: 10px;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./media/y-so-serious.png");
+    background-repeat: repeat;
+    color: white;
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input{
+    color: white;
+    margin: 2px;
+}
+
+select {
+    color: white;
+    margin: 2px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+
+legend {
+    font-size: 18px;
+    font-family: "Bodoni MT Black";
+}
+
+li {
+    font-size: 16px;
+    font-family: "Sitka Text";
+}
+
+option {
+    color: black;
+}
+
+li:hover {
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    cursor: pointer;
+}
+
+li::selection {
+    color: white;
+    background: rgb(255, 225, 54, 0.0);
+  }
+
+.button {
+    margin: 2px;
+}
+
+.textbox {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid gray;
+  }
+
+  .textbox:focus {
+    outline: none;
+    animation-name: textboxfocus;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+  }
+
+  @keyframes textboxfocus {
+    100% {
+        box-shadow: 2px 2px 2px black;
+        border-bottom: 2px solid lightgray;
+        border-width: 2px;
+    }
+  }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table><tr><td>
+        <form><fieldset><legend>Add an Item</legend>
+            <span>Enter ID: </span><input type="text" class="textbox" id="itemID" maxlength="6" autocomplete="off" required><br>
+            <span>Enter Name: </span><input type="text" class="textbox" id="itemName" maxlength="20" autocomplete="off" required><br>
+            <span>Enter Company: </span><input type="text" class="textbox" id="itemCompany" maxlength="20" autocomplete="off" required><br>
+            <span>Enter Size: </span><br><input type="number" class="textbox" id="itemSize" maxlength="4" min="1" max="9999" autocomplete="off" required><br><br>
+            <input type="submit" id="addItem" value=" Add Item " class="button">
+        </fieldset></form>
+    </td><td>
+        <form><fieldset><legend>Edit or Delete</legend>
+            <span>Select ID: </span><br>
+            <select id="editSelect"></select><br>
+            <span>Enter Name: </span><input type="text" class="textbox" id="editName" maxlength="20" autocomplete="off" required><br>
+            <span>Enter Company: </span><input type="text" class="textbox" id="editCompany" maxlength="20" autocomplete="off" required><br>
+            <span>Enter Size: </span><br><input type="number" class="textbox" id="editSize" maxlength="4" min="1" max="9999" autocomplete="off" required><br><br>
+            <input type="submit" id="editItem" value=" Edit Item " class="button"><input type="button" id="deleteItem" value=" Delete Item " class="button">
+        </fieldset></form>
+    </td></tr><tr><td colspan="2">
+    <fieldset class="list">
+        <legend>Your List</legend>
+        <ul id="theList"></ul>
+    </fieldset></td></tr></table>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="frontend.js"></script>
+</body>
+</html>
